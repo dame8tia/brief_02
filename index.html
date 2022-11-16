@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/reset_css.css" type="text/css">  
+        <link rel="stylesheet" href="style/style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+        <script src="https://cdn.jsdelivr.net/npm/ol@v7.1.0/dist/ol.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.1.0/ol.css">
+
+        <title>BRIEF 02 : Replique AEAG </title>
+    </head>
+
+    <body>
+        <div class="layout">
+            <header>
+                <div class="header__left">
+                    <img class="logo__aeag" src="images/aeag.jpg" alt="logo de l'agence de l'eau Adour Garonne avec mention ministère">
+                </div>
+
+                <div class="header__right">
+                    
+                    <div class="header__right__menu__detail__haut">  
+                        <div class="header__right__contrast">
+                            <i class="fa-solid fa-circle-half-stroke"></i>     
+
+                            <!--<img class="logo__contrast" src="images/contrast.svg" alt="logo constrate" > -->
+
+                            <!-- On peut aussi récupérer le code de l'image vectorielle (ouvrir l'image svg dans VS Code)
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                width="415px" height="415px" viewBox="0 0 415 415" style="enable-background:new 0 0 415 415;" xml:space="preserve">
+                                <g>
+                                    <path d="M354.225,60.775C315.033,21.584,262.925,0,207.5,0S99.967,21.584,60.775,60.775S0,152.074,0,207.5
+                                        s21.583,107.533,60.775,146.725C99.967,393.417,152.075,415,207.5,415s107.533-21.583,146.725-60.775
+                                        C393.417,315.033,415,262.926,415,207.5S393.417,99.966,354.225,60.775z M197.5,60.975v293.051
+                                        C121.166,348.868,60.638,285.119,60.638,207.5S121.166,66.132,197.5,60.975z"/>
+                                </g>
+                            </svg>  
+                            -->                  
+                        </div>
+
+                        <div class="navigation__menu__haut">
+                            <nav class="acces__rapides__haut">
+                                <ul class="acces__rapides__haut__list">
+                                    <li class="first__level__haut">                                        
+                                        <a href="https://eau-grandsudouest.fr/actualites">
+                                            <i class="fa-regular fa-newspaper"></i>
+                                            <span>Actualités</span>
+                                        </a>
+                                    </li>
+                                    <li class="first__level__haut">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        <a href="https://eau-grandsudouest.fr/agenda"><span>Agenda</span></a>
+                                    </li>
+                                    <li class="first__level__haut">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                        <a href="http://www.eau-adour-garonne.fr/_authenticate?requestedURL=/fr/espace-instances/extranet.html"><span>Extranet</span></a>
+                                    </li>
+                                    <li class="first__level__haut">                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="14px" height="16px" fill="red" font-size="15px">
+                                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                             
+                                            <path transform="scale(0.09,0.09)" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32 32V448H416V384h32V0H416 384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-256H352v32H128V128zm224 64v32H128V192H352z"/>
+                                        </svg>
+                                        <!--<i class="fa-regular fa-book"></i> Ne fonctionne pas-->
+                                        <a href="https://eau-grandsudouest.fr/mediatheque"><span>Médiathèque</span></a>
+                                    </li>
+
+                                    <li class="first__level__haut">                                        
+                                        <!--<i class="fa-light fa-sailboat"></i>-->
+                                        <a class="btn__odyssee" href="https://eau-grandsudouest.fr/odyssy">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="14px" height="16px" fill="red">
+                                                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path d="M256 16c0-7 4.5-13.2 11.2-15.3s13.9 .4 17.9 6.1l224 320c3.4 4.9 3.8 11.3 1.1 16.6s-8.2 8.6-14.2 8.6H272c-8.8 0-16-7.2-16-16V16zM212.1 96.5c7 1.9 11.9 8.2 11.9 15.5V336c0 8.8-7.2 16-16 16H80c-5.7 0-11-3-13.8-8s-2.9-11-.1-16l128-224c3.6-6.3 11-9.4 18-7.5zM5.7 404.3C2.8 394.1 10.5 384 21.1 384H554.9c10.6 0 18.3 10.1 15.4 20.3l-4 14.3C550.7 473.9 500.4 512 443 512H133C75.6 512 25.3 473.9 9.7 418.7l-4-14.3z"/>
+                                            </svg>
+                                            Odyssy
+                                        </a>
+                                    </li>
+
+                                    <li class="first__level__haut">
+
+                                        <button class="btn_service">
+                                            <i class="fa-solid fa-globe"></i> 
+                                            service en ligne
+                                        </button>
+
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+
+                        <div class="header__rigth__logo__menu">
+                            <!-- <img class="logo__menu" src="images/menu.png" alt="menu"> -->
+                            <i class="fa-sharp fa-solid fa-bars"></i>
+                        </div>
+
+                        <div class="header__right__haut__search__mobile">
+                            <img class="logo__search" src="images/search.png" alt="logo recherche">
+                        </div>    
+
+
+
+                    </div>
+
+                    <div class="header__right__menu__detail__bas">
+                        
+                        <div class="header__right__primary__menu">
+                            <nav class="acces__rapides">
+                                <ul class="acces__rapides__list">
+                                    <li class="first__level">
+                                        <a href="https://eau-grandsudouest.fr/agence-eau/role-fonctionnement-agence"><span>L'agence de l'eau</span></a> 
+                                    </li>
+                                    <li class="first__level">
+                                        <a href="https://eau-grandsudouest.fr/comite-bassin/comite-bassin"><span>Le comité de bassin</span></a>
+                                    </li>
+                                    <li class="first__level">
+                                        <a href="https://eau-grandsudouest.fr/politique-eau/france/gestion-milieux-aquatiques-prevention-inondations-gemapi"><span>La politique de l'eau</span></a>
+                                    </li>
+                                    <li class="first__level">
+                                        <a href="https://eau-grandsudouest.fr/usages-enjeux-eau/changement-climatique"><span>Usage et enjeux de l'eau</span></a>
+                                    </li>
+                                    <li class="first__level">
+                                        <a href="https://eau-grandsudouest.fr/surveillance-etudes-donnees/surveillance-milieux"><span>Surveillance, études et données</span></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header__right__search">
+                            <img class="logo__search" src="images/search.png" alt="logo recherche">
+                        </div>                 
+                    </div>
+
+                </div>
+            </header>
+
+            <main>
+                <!--  part1 Slider Accueil -->
+                <div class="slider__accueil">
+                    <div class="container__slider">                        
+                        <img class="image__slider__accueil" src="images/slider_container_accueil_photo.JPG" alt="image webinaire">
+                        <div class="container__slider__info">
+                            <p class="surtitre">webinaire</h3>
+                            <p>Nouveau SDAGE-PDM : Des clés pour agir</p>
+                            <a href="https://eau-grandsudouest.fr/actualites/webinaire-nouveau-sdage-pdm-cles-pour-agir">Replay</a>
+                            <ol>
+                                <ul class="dot"></ul>
+                                <ul class="dot"></ul>
+                                <ul class="dot"></ul>
+                                <ul class="dot"></ul>
+                                <ul class="dot"></ul>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!--  part2 L'Actualité -->
+                <div class="main__part2">
+                    <div class="main__part2__titre">
+                        <h2 class="h2__titre">
+                            <span class="line__red"></span>  
+                            <span class="h2__titre__maj">Toute</span>
+                            <br>  
+                            <span class="h2__content">l'actualité</span>
+                        </h2>
+                        <div class="main__part2__chevron__slide">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="main__part2__content">
+                        <div class="main__part2__slide">              
+                            <div class="actua">
+                                <div class="actua__img">
+                                    <img class="actua__01__img" src="images/actua_cop27.jpg" alt="COP_27 en Egypte">
+                                </div>
+
+                                <div class="actua__tag">
+                                    <p>Type d'évènement</p>
+                                </div>
+                                <p class="actua__title">
+                                    <span>COP27 : conférence des agences de l'eau le 14 novembre</span>
+                                </p>
+                                <p class="actua__teaser">
+                                    <span> La conférence internationale de l'Organisation des Nations unies sur le changement climatique se […]
+                                    </span>
+                                </p>
+                            </div>                        
+                        </div>
+                        <div class="main__part2__slide__slide__desktop">
+                            <div class="actua">
+                                <div class="actua__img">
+                                    <img class="actua__02__img" src="images/actua_odyssy.jpg" alt="Descente de la Garonne en canoe">
+                                </div>
+                                
+                                <div class="actua__tag">
+                                    <p>Informations</p>
+
+                                </div>
+
+                                <p class="actua__title">
+                                    <span>Revivez l'épopée Odyssy 2022</span>
+                                </p>
+
+                                <p class="actua__teaser">
+                                    <span> Odyssy, c'est une aventure de plusieurs jours, pendant laquelle des jeunes entre 18 et 25 ans sont […]
+                                    </span>
+                                </p>
+                            </div>
+
+                            <div class="actua">
+                                <div class="actua__img">
+                                    <img class="actua__03__img" src="images/Actua_secheresse.png" alt="Secheresse" width="100%">
+                                </div>
+                                
+                                <div class="actua__tag">
+                                    <p>Informations</p>
+                                </div>
+                                <p class="actua__title">
+                                    <span>Faire face à la sécheresse : 22 millions d'euros supplémentaire de budget</span>
+                                </p>
+                                <p class="actua__teaser">
+                                    <span>L’Agence de l’eau renforce son aide aux collectivités avec 22 millions d’euros supplémentaires de […]
+                                    </span>
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="main__part3_map">
+                    <div>
+
+                    </div>
+
+                    <div>
+
+                    </div>
+                </div>
+
+
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* mobil first */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid rgb(0, 255, 200); */
+    margin: 15px;
+    width:100vw;
+    height: 100vh;
+    overflow-x: hidden;  
+    font-size: 1rem;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 100;
+    color: black;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between;  
+    /* border: 1px solid rgb(236, 12, 12); */
+    height: auto;
+    width:95vw;
+}
+.header__left{
+    /*border:2px solid black;*/
+    width:25vw;
+}
+.header__right{
+    /*border:2px solid black;*/
+    padding-top:10px;
+    width:75vw;
+}
+
+.logo__aeag{
+    /*width: 125px;
+    height: 81px;*/
+    width: inherit;
+    height:inherit;
+}
+
+.header__right__menu__detail__haut{
+    /*border:20px solid rgb(219, 17, 17);*/
+    width:95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.fa-circle-half-stroke{ /* logo contrast*/
+    width:22px;
+    height:22px;
+    color:#eb595b;
+}
+.logo__search{
+    width:22px;
+    height:22px;
+    background-color:white;
+}
+.fa-bars{ /* logo menu*/
+    width:25px;
+    height:25px;
+    color:#eb595b;
+}
+
+
+
+.navigation__menu__haut{
+    display:none;
+}
+.header__right__primary__menu{
+    display:none;
+}
+.header__right__menu__detail__bas{
+    display:none;
+}
+
+
+
+/* --- ---- >> main ------------------ */
+
+/* ---  part1 Slider Accueil */
+main{
+    width:95%;
+}
+.slider__accueil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+    /* border:6px solid green; */
+    background:#4d64b3;
+}
+
+.container__slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: max-content;
+    padding:0px;
+    margin: 0px;
+    width:80%;    
+}
+.image__slider__accueil{   
+    width: 18.375rem;
+    height: 15.9375rem;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.container__slider__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 350px;
+}
+
+.container__slider__info p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #fff;
+    font-family: "NeuePlak-Bold",sans-serif;
+    font-weight: 700;
+}
+.surtitre{
+    font-size: .75rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 600;
+}
+
+.container__slider__info a {
+    margin-bottom: 1rem;
+    display: block;
+    margin-top: 1rem;
+    color: #fff;
+    text-decoration: underline;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 700;
+    }
+.dot{
+    display: inline-block;
+    border-radius: 50%;
+    width:10px;
+    height: 10px;
+    background-color: #bbb;
+}
+
+/* ---  part2  Actualités */
+
+/*.h2__titre{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 15px;
+    font-size: .875rem;
+}*/
+
+.main__part2{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border:2px solid rgb(77, 41, 167); */
+    width:100%;
+}
+
+.main__part2__titre{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border:5px solid red; */
+    width:auto;
+}
+/* .h2__titre{
+    border:5px solid rgb(3, 2, 2);
+} */
+
+.line__red{
+    display: inline-block;
+    width: 26px;
+    height: 1px;
+    margin: 0;
+    margin-right: 0px;
+    margin-right: 1.5rem;
+    background-color: #eb595b;
+    border: solid #eb595b .125rem;
+    border-radius: 4px;
+}
+.h2__titre__maj{
+    text-transform: uppercase;
+    letter-spacing: .2875rem;
+}
+.h2__content{
+    display: block;
+    padding-top: .375rem;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+}
+
+
+
+.main__part2__chevron__slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* border:5px solid rgb(3, 2, 2); */
+}
+
+.fa-circle-chevron-left, .fa-circle-chevron-right{
+    color:#eb595b;
+    font-size:30px;
+}
+
+.main__part2__slide__slide__desktop{
+    display:none;
+}
+
+.main__part2__content{
+    display: grid;
+    grid-template-columns: 100%;
+    /* border : 10px solid black; */
+}
+.main__part2__slide{
+    height: auto;
+    width: auto;
+    /* border : 5px solid red; */
+}
+.actua{
+    width:auto;
+    /* border:5px  solid green; */
+}
+.actua__01__img{
+    width: 100%;
+    padding-bottom: 70px;
+}
+.actua__tag{
+    margin-bottom: .675rem;
+    width:fit-content;  
+    background-color:#4d64b3;
+    color:white; 
+    padding: 0 .9375rem;
+    margin-right: 1.25rem;
+    margin-bottom: 2.125rem;
+    font-size: .6875rem;
+    text-transform: uppercase;
+    letter-spacing: .10625rem;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 700;   
+}
+.actua__title{
+    margin-bottom: .875rem;
+    font-size: 1.375rem;
+    color: #4d64b3;
+    font-family: "NeuePlak-Bold",sans-serif;
+    font-weight: 700;
+}
+.actua__teaser{
+    margin-bottom: .875rem;
+    font-size: 1.375rem;
+    color: #4d64b3;
+    font-family: "NeuePlak-Bold",sans-serif;
+    font-weight: 700;      
+}
+
+.actua__teaser span {
+    color: #000;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------- MEDIA QUERIES ----------------------------- */
+@media (min-width: 480px) and (max-width:950px){
+    .logo__aeag{
+        width:inherit;
+        height: inherit;
+    }
+
+    .navigation__menu__haut{
+        display:none;
+    }
+    .header__right__primary__menu{
+        display:none;
+    }
+    .header__right__menu__detail__bas{
+        display:none;
+    }
+    .image__slider__accueil{   
+        width: 28.875rem;
+        height: 25rem;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .container__slider__info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+        max-width: 350px;
+    }
+    .container__slider__info p {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        color: #fff;
+        font-family: "NeuePlak-Bold",sans-serif;
+        font-weight: 700;
+    }
+    .surtitre{
+        font-size: .75rem;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: .15rem;
+        font-family: "Open Sans",sans-serif;
+        font-weight: 600;
+    }
+    .main__part2__content{
+        display: grid;
+        grid-template-columns: 33% 67%;
+        /* justify-content: flex-start; */
+        /* border : 10px solid black; */
+    }
+    .main__part2__slide{
+        height: auto;
+        width: auto;
+        /* border : 5px solid red; */
+    }
+    .actua{
+        width:auto;
+        /* border:5px  solid green; */
+    }
+    .actua__img{
+        display: flex;
+        flex-direction: column;
+        height:10rem;
+        width:12rem;
+        text-align: center;
+    }
+
+    .actua__01__img{
+        width:100%;
+        max-width: min-content;
+        padding-bottom: 70px;
+    }
+    .actua__tag{
+        margin-bottom: .675rem;
+        width:fit-content;  
+        background-color:#4d64b3;
+        color:white; 
+        padding: 0 .9375rem;
+        margin-right: 1.25rem;
+        margin-bottom: 2.125rem;
+        font-size: .6875rem;
+        text-transform: uppercase;
+        letter-spacing: .10625rem;
+        font-family: "Open Sans",sans-serif;
+        font-weight: 700;   
+    }
+    .actua__title{
+        margin-bottom: .875rem;
+        font-size: 1.375rem;
+        color: #4d64b3;
+        font-family: "NeuePlak-Bold",sans-serif;
+        font-weight: 700;
+    }
+    .actua__teaser{
+        margin-bottom: .875rem;
+        font-size: 1rem;
+        color: #4d64b3;
+        font-family: "NeuePlak-Bold",sans-serif;
+        font-weight: 700;      
+    }
+
+    .actua__teaser span {
+        color: #000;
+        font-family: "Open Sans",sans-serif;
+        font-weight: 400;
+        line-height: 1.875rem;
+    }
+
+    .main__part2__slide__slide__desktop{     
+        display: flex; 
+        height: auto;
+        width: auto;
+        /* border:5px solid red;      */
+    }
+    .actua__02__img{
+        height: 10rem;
+        margin:0 auto;
+    }
+    
+    .actua__03__img{
+        width: auto;
+        height: 10rem;
+    }
+
+}
+
+
+@media(min-width: 950px){ /* Au delà de 950px */
+
+    /* ----------- >>> DEBUT menu de droite haut ------------- */
+    .logo__aeag{
+        width:inherit;
+        height: inherit;
+    }
+    .header__right{
+        display:flex;
+        flex-direction:column;
+    }
+    .header__rigth__logo__menu{
+        display:none;
+    }
+    .header__right__contrast{
+        justify-content: flex-start ;
+    }
+
+    .header__right__haut__search__mobile{ /* la loupe disparait du menu haut en version desktop*/
+        display:none;
+    }
+    /*Barre navigation haut*/ 
+    .header__right__menu__detail__haut{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border-bottom:1px solid grey;
+        padding-bottom: 10px;
+    }
+    .navigation__menu__haut{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        justify-content: space-between;
+        font-variant: small-caps;
+        
+    }
+    .acces__rapides__haut{
+        width:100%;
+    }
+
+    .acces__rapides__haut span{
+        color: black;
+    }
+    .acces__rapides__haut__list{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        justify-content: space-around;
+        /* border: 5px solid royalblue; */
+    }
+    .fa-newspaper{
+        color:red;
+        width: 22px;
+        height:22px;
+    }
+
+    .fa-calendar-days{
+        color:red;
+        width: 22px;
+        height:22px;
+    }
+    .fa-network-wired{
+        color:red;
+        width: 22px;
+        height:22px;
+    }
+
+    .first__level__haut{
+        display: flex;
+        justify-content: center;
+        border-left: 0.0625rem solid grey;
+        padding:0.5rem .675rem 0 .675rem;
+    }
+
+    .first__level__haut ul li {
+        text-align: center;
+    }
+    .first__level__haut a{
+        text-decoration: none;
+    }
+
+    .btn__odyssee{
+        padding: .35rem .7125rem;
+        font-size: .6875rem;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: .0875rem;
+        cursor: pointer;
+        background-color: #4d64b3;
+        border: 1px solid #4d64b3;
+        border-radius: 29px;
+        outline: none;
+    }
+    .btn__odyssee:hover{
+        background-color: rgb(183, 173, 173);
+        border: 1px solid rgb(183, 173, 173);
+    }
+    .btn_service{
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: .0875rem;
+        cursor: pointer;
+        background-color: #eb595b;
+        border: 1px solid #eb595b;
+        border-radius: 29px;
+        outline: none;
+    }
+    .btn_service:hover{
+        color: #eb595b;
+        text-transform: uppercase;
+        letter-spacing: .0875rem;
+        cursor: pointer;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 29px;
+    }
+
+
+
+    /* --------------- FIN menu de droite haut*/
+
+    /* ----------- >>> DEBUT menu de droite bas ------------- */
+
+    /*Barre navigation bas*/
+    .header__right__menu__detail__bas{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        /* border:2px solid red; */
+        width:100%
+    }
+    /*-- > détail du menu */
+    .header__right__primary__menu{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        /* border:2px solid black; */
+        width: 100%;
+    }   
+    .header__right__primary__menu span{
+        color: black;
+        padding:0 5px;
+    }
+
+    .acces__rapides{
+        display:flex;
+        flex-direction: row;  
+        justify-content: flex-end; 
+    }
+    .acces__rapides__list{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+    }
+    .first__level{
+        text-align: center;
+        width:20%;
+    }
+    .first__level a {
+        text-decoration: none;
+    }
+    /* --------------- FIN menu de droite bas*/
+
+
+    /* ---------------- Slider */
+
+    .container__slider{
+        display: flex;
+        flex-direction: row;
+        max-width: max-content;
+    }
+    .container__slider__info{
+        width: 40%;
+        max-width: inherit;
+        margin-top: 1.875rem;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .image__slider__accueil{   
+        width: 28.875rem;
+        height: 25rem;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+   
+
+    .container__slider__info p {
+        font-size: 2.125rem;
+        line-height: 2.5rem;
+        color: #fff;
+        font-family: "NeuePlak-Bold",sans-serif;
+        font-weight: 700;
+    }
+
+
+    
+
+    /*--------------  main part2 Actualité */
+
+    .line__red{
+        width: 40px;
+    }
+    .h2__content{
+        display: block;
+        padding-top: 1.5rem;
+        font-size: 3.5rem;
+        line-height: 2.25rem;
+    }
+    .main__part2__content{
+        display: grid;
+        grid-template-columns: 33% 67%;
+        /* justify-content: flex-start; */
+        /* border : 10px solid black; */
+    }
+    .main__part2__slide{
+        height: auto;
+        width: auto;
+        /* border : 5px solid red; */
+    }
+    .actua{
+        width:auto;
+        height:auto;
+        /* border:5px solid green; */
+    }
+    .actua__img{
+        display: flex;
+        flex-direction: column;
+        height:10rem;
+        width:12rem;
+        text-align: center;
+    }
+    .actua__01__img{
+        width: 100%;
+        padding-bottom: 70px;
+    }
+
+    .actua__tag{
+        margin-bottom: .675rem;
+        width:fit-content;  
+        background-color:#4d64b3;
+        color:white; 
+        padding: 0 .9375rem;
+        margin-right: 1.25rem;
+        margin-bottom: 2.125rem;
+        font-size: .6875rem;
+        text-transform: uppercase;
+        letter-spacing: .10625rem;
+        font-family: "Open Sans",sans-serif;
+        font-weight: 700;   
+    }
+    .actua__title{
+        margin-bottom: .875rem;
+        font-size: 1.375rem;
+        color: #4d64b3;
+        font-family: "NeuePlak-Bold",sans-serif;
+        font-weight: 700;
+    }
+    .actua__teaser{
+        margin-bottom: .875rem;
+        font-size: 1.375rem;
+        color: #4d64b3;
+        font-family: "NeuePlak-Bold",sans-serif;
+        font-weight: 700;      
+    }
+
+    .actua__teaser span {
+        color: #000;
+        font-family: "Open Sans",sans-serif;
+        font-weight: 400;
+        line-height: 1.875rem;
+    }
+
+
+    .main__part2__slide__slide__desktop{     
+        display: flex; 
+        height: auto;
+        width: auto;
+        /* border:1px solid red;  */    
+    }
+    .actua__02__img{
+        height: 10rem;
+        margin:0 auto;
+    }
+    
+    .actua__03__img{
+        width: auto;
+        height: 10rem;
+    }
+}
