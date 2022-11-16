@@ -134,6 +134,7 @@ main{
 }
 .surtitre{
     font-size: .75rem;
+    margin-top:15px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: .15rem;
@@ -156,6 +157,13 @@ main{
     width:10px;
     height: 10px;
     background-color: #bbb;
+}
+.dot_selected{
+    display: inline-block;
+    border-radius: 50%;
+    width:10px;
+    height: 10px;
+    background-color:#eb595b;
 }
 
 /* ---  part2  Actualités */
@@ -182,6 +190,7 @@ main{
     justify-content: space-between;
     /* border:5px solid red; */
     width:auto;
+    margin-top:15px;
 }
 /* .h2__titre{
     border:5px solid rgb(3, 2, 2);
@@ -222,6 +231,7 @@ main{
 .fa-circle-chevron-left, .fa-circle-chevron-right{
     color:#eb595b;
     font-size:30px;
+    margin-right: 15px;
 }
 
 .main__part2__slide__slide__desktop{
@@ -236,6 +246,7 @@ main{
 .main__part2__slide{
     height: auto;
     width: auto;
+    margin-top:40px;
     /* border : 5px solid red; */
 }
 .actua{
@@ -247,12 +258,13 @@ main{
     padding-bottom: 70px;
 }
 .actua__tag{
-    margin-bottom: .675rem;
+
     width:fit-content;  
     background-color:#4d64b3;
     color:white; 
-    padding: 0 .9375rem;
+    padding: .9375rem .9375rem;
     margin-right: 1.25rem;
+    margin-top:1rem;
     margin-bottom: 2.125rem;
     font-size: .6875rem;
     text-transform: uppercase;
@@ -262,6 +274,7 @@ main{
 }
 .actua__title{
     margin-bottom: .875rem;
+    padding-right:.875rem;
     font-size: 1.375rem;
     color: #4d64b3;
     font-family: "NeuePlak-Bold",sans-serif;
@@ -269,6 +282,7 @@ main{
 }
 .actua__teaser{
     margin-bottom: .875rem;
+    padding-right:.875rem;
     font-size: 1.375rem;
     color: #4d64b3;
     font-family: "NeuePlak-Bold",sans-serif;
@@ -284,9 +298,24 @@ main{
 
 
 
+/* -------------- Footer ------------ */
+footer {
+    display:flex;   
+    flex-direction: column;
+    justify-content:space-between;
+    background:#4d64b3;
+    width:95%;
+}
 
+.footer__left{
+    display:flex;   
+    flex-direction: column;
+}
 
-
+.footer__right{
+    display:flex;   
+    flex-direction: column;
+}
 
 
 
@@ -345,6 +374,7 @@ main{
     .main__part2__slide{
         height: auto;
         width: auto;
+        margin-top:40px;
         /* border : 5px solid red; */
     }
     .actua{
@@ -365,12 +395,12 @@ main{
         padding-bottom: 70px;
     }
     .actua__tag{
-        margin-bottom: .675rem;
         width:fit-content;  
         background-color:#4d64b3;
         color:white; 
-        padding: 0 .9375rem;
+        padding: .9375rem .9375rem;
         margin-right: 1.25rem;
+        margin-top:1rem;
         margin-bottom: 2.125rem;
         font-size: .6875rem;
         text-transform: uppercase;
@@ -380,6 +410,7 @@ main{
     }
     .actua__title{
         margin-bottom: .875rem;
+        padding-right:.875rem;
         font-size: 1.375rem;
         color: #4d64b3;
         font-family: "NeuePlak-Bold",sans-serif;
@@ -387,6 +418,7 @@ main{
     }
     .actua__teaser{
         margin-bottom: .875rem;
+        padding-right:.875rem;
         font-size: 1rem;
         color: #4d64b3;
         font-family: "NeuePlak-Bold",sans-serif;
@@ -404,6 +436,7 @@ main{
         display: flex; 
         height: auto;
         width: auto;
+        margin-top:40px;
         /* border:5px solid red;      */
     }
     .actua__02__img{
@@ -416,6 +449,25 @@ main{
         height: 10rem;
     }
 
+
+    /* -------------- Footer ------------ */
+    footer {
+        display:flex;   
+        flex-direction: row;
+        justify-content:space-between;
+        background:#4d64b3;
+        width:95%;
+    }
+
+    .footer__left{
+        display:flex;   
+        flex-direction: column;
+    }
+
+    .footer__right{
+        display:flex;   
+        flex-direction: column;
+    }
 }
 
 
@@ -640,6 +692,7 @@ main{
     .main__part2__slide{
         height: auto;
         width: auto;
+        margin-top:40px;
         /* border : 5px solid red; */
     }
     .actua{
@@ -657,15 +710,17 @@ main{
     .actua__01__img{
         width: 100%;
         padding-bottom: 70px;
+        margin :0 auto;
     }
 
     .actua__tag{
-        margin-bottom: .675rem;
+
         width:fit-content;  
         background-color:#4d64b3;
         color:white; 
-        padding: 0 .9375rem;
+        padding: .9375rem .9375rem;
         margin-right: 1.25rem;
+        margin-top:1rem;
         margin-bottom: 2.125rem;
         font-size: .6875rem;
         text-transform: uppercase;
@@ -675,6 +730,7 @@ main{
     }
     .actua__title{
         margin-bottom: .875rem;
+        padding-right:.875rem;
         font-size: 1.375rem;
         color: #4d64b3;
         font-family: "NeuePlak-Bold",sans-serif;
@@ -682,6 +738,7 @@ main{
     }
     .actua__teaser{
         margin-bottom: .875rem;
+        padding-right:.875rem;
         font-size: 1.375rem;
         color: #4d64b3;
         font-family: "NeuePlak-Bold",sans-serif;
@@ -700,6 +757,7 @@ main{
         display: flex; 
         height: auto;
         width: auto;
+        margin-top:40px;
         /* border:1px solid red;  */    
     }
     .actua__02__img{
@@ -710,5 +768,25 @@ main{
     .actua__03__img{
         width: auto;
         height: 10rem;
+    }
+
+
+    /* -------------- Footer ------------ */
+    footer {
+        display:flex;   
+        flex-direction: row;
+        justify-content:space-between;
+        background:#4d64b3;
+        width:95%;
+    }
+
+    .footer__left{
+        display:flex;   
+        flex-direction: column;
+    }
+
+    .footer__right{
+        display:flex;   
+        flex-direction: column;
     }
 }
