@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style_inscription.css">
+
+    <script src="/script/inscription.js" defer></script>
+
+    <title>Inscription</title>
+</head>
+
+    <body>
+        <div class="layout">
+            <div class="layout__content">
+                <header class="header__titre">
+                    <img src="images/photo_inscription.jpg" alt="">
+                    <div >
+                        <p class="header__titre__texte">Ligne d'eau</p>
+                    </div>
+                </header>
+                <form action="#" class="formulaire">
+                    <div class="form__top">
+                        <p>Abonnez-vous à la lettre d'information de l'agence de l'eau Adour Garonne</p>
+                    </div>
+                    <div class="form__corps">
+                        <div class="form__corps__part1">
+                            <label class="label__email" for="id_mail">Veuillez entrer votre adresse mail</label>
+                            <br>
+                            <input class="input__email" id="id_mail" type="text" required placeholder="votre email">
+                        </div>
+                        <div class="form__corps__partx__mention">
+                            <p>Veuillez renseigner votre adresse email pour vous inscrire. Ex aze@ret.fr</p>
+                        </div>
+                        <div class="form__corps__part2">
+                            <input type="checkbox" value="1">
+                            <p>J'accepte de recevoir vos e-mails et confirme avoir pris connaissance de votre politique de confidentialité et mentions légales.</p>
+                        </div>
+                        <div class="form__corps__partx__mention">
+                            <p>
+                                Vous pouvez vous désinscrire à tout moment en cliquant sur le lien présent dans nos emails.
+                            </p>
+                        </div>
+                        <div class="captcha">
+                            <div class="captcha__cb">
+                                <input id="id_cb_capt" type="checkbox" value="1">
+                                <label for="id_cb_capt">Je ne suis pas un robot</label>
+                            </div>
+                            <div class="captcha__icon">
+                                <img src="images/recaptcha-logo.png" alt="captcha">
+                            </div>
+                        </div>
+                        <div class="form__corps__part__end">
+                            <div class="info__fin">
+                                <div class="info__fin__logo">
+                                    <img src="images/circle-check-regular.svg" alt="logo_check" width="60px" fill="red">
+                                </div>
+                                <div class="info__fin__texte">
+                                    <p>Nous utilisons Sendinblue en tant que plateforme marketing. En soumettant ce formulaire, vous reconnaissez que les informations que vous allez fournir seront transmises à Sendinblue en sa qualité de processeur de données; et ce conformément à ses <a href="#">conditions générales d'utilisation</a>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="button_inscription">
+                            <button onclick="inscription()" class="btn_inscript">S'inscrire</button>
+                        </div>
+                    </div>                
+    
+                </form>
+
+            </div>
+        </div>
+            
+    </body>
+
+
+
+</html>

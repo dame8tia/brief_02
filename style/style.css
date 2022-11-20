@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+
+
 /* mobil first */
 body {
     display: flex;
@@ -15,6 +17,7 @@ body {
     font-family: "Open Sans",sans-serif;
     font-weight: 100;
     color: black;
+    /* background-color: yellow; */
 }
 
 .layout{
@@ -35,11 +38,25 @@ header {
 .header__left{
     /*border:2px solid black;*/
     width:25vw;
+    display: flex;
+    flex-direction: column;
+
 }
+.btn__main__mode{
+    margin-right:25px;
+    margin-top:25px;
+    margin-bottom:25px;
+    height:fit-content;
+    border-radius: 25px;
+}
+
 .header__right{
     /*border:2px solid black;*/
     padding-top:10px;
     width:75vw;
+}
+.header__right__search{
+    margin-left:5px;
 }
 
 .logo__aeag{
@@ -47,6 +64,11 @@ header {
     height: 81px;*/
     width: inherit;
     height:inherit;
+    cursor: pointer;
+}
+
+.logo__aeag:active{
+    transform :scale(1.1)
 }
 
 .header__right__menu__detail__haut{
@@ -140,6 +162,16 @@ main{
     letter-spacing: .15rem;
     font-family: "Open Sans",sans-serif;
     font-weight: 600;
+}
+.surtitre_black{
+    color: #000;
+    margin-top : 15px;
+    font-size: .75rem;
+    letter-spacing: .225rem;
+    line-height: 1.875rem;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .container__slider__info a {
@@ -296,6 +328,198 @@ main{
     line-height: 1.875rem;
 }
 
+.main__part2__footer{
+    display:grid;
+    grid-column: span 3;
+    width:100%;
+    margin-bottom:30px;
+    margin-top:30px;
+    text-align: center;
+}
+.btn__main {
+    margin-top:15px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding:5px 15px 5px 15px;
+    width:fit-content;
+}
+.mention{
+    /* Pour aligner le before avec le texte : faire display flex */
+    display:flex;
+    align-items: center;
+    color:#000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .6875rem;
+    letter-spacing: .0875rem;
+    font-weight: 700;
+}
+.btn__main:hover{
+    background-color: #eb595b;    
+}
+.mention:hover{
+    color:#fff;
+}
+.mention::before{
+    display: block;
+    width: 10px;
+    margin-right: 20px;
+    content: ">";
+    color: #eb595b;
+}
+.mention::before:hover{
+    display: block;
+    width: 10px;
+    margin-right: 20px;
+    content: ">";
+    color: #fff;
+}
+
+
+/*--------------- part Map */
+.container__map{
+    display:flex;
+    flex-direction: column;
+}
+.map{
+    width:100%;
+}
+.map__text{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    margin-left:25px
+}
+.map__text__texte .annonce{
+    line-height: 1.875rem;
+}
+
+.map__text__texte .intro{
+    margin-bottom: 1.875rem;
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+    font-family: "NeuePlak-SemiBold",sans-serif;
+    font-weight: 600;
+}
+.mention_circle{
+    /* Pour aligner le before avec le texte : faire display flex */
+    display:flex;
+    align-items: center;
+    color:#000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .6875rem;
+    letter-spacing: .0875rem;
+    font-weight: 700;
+}
+.mention_circle:hover{
+    color:#fff;
+}
+.mention_circle::before{
+    display: block;
+    width: 10px;
+    margin-right: 20px;
+    content: url('/images/circle-chevron-right-solid.svg');
+    color: #eb595b;
+}
+.mention_circle::before:hover{
+    display: block;
+    width: 10px;
+    margin-right: 20px;
+    content: url('/images/circle-chevron-right-solid.svg');
+    color: #fff;
+}
+
+
+
+#Map-Adour{
+    /* svg repris du site de l'Agence */
+    width:100%;
+}
+.cls-1, .cls-2 {fill: none;
+}
+.cls-1 {
+    stroke: url('#Dégradé_sans_nom');
+}
+.cls-2 {
+    stroke: url('#Dégradé_sans_nom_2');
+}
+.cls-3, .cls-4, .cls-6 {
+    fill: #fff;
+}
+.cls-3, .cls-6 {
+    stroke: #aaa;
+}
+.cls-5 {
+    fill: #eb595b;
+}
+.cls-6 {
+    fill-rule: evenodd;
+}
+.cls-7 {
+    fill: #7eb0d3;
+}
+#bassins_area{
+    cursor: pointer;
+}
+#bassins_area g{
+    outline: none !important;
+}
+#bassinMap_13_selected .cls-3{
+    fill:#4d64b3;
+}
+#bassinMap_13_selected .texts{
+    fill:#fff;
+}
+/*--------------- part Inscription */
+.inscription{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.inscription__titre{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.inscription__para{
+    margin-top:30px;
+}
+.inscription__separateur{
+    display:flex;
+    justify-content:flex-start;
+}
+.inscription__separateur span{
+    content:'';
+    width:75%;
+    border-top: 6px solid #eb595b;
+    width:75%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.btn__main__inv {
+    margin-top:15px;
+    background-color: #eb595b;
+    border-radius: 25px;
+    padding:5px 15px 5px 15px;
+    width:35%;
+}
+.mention__inv{
+    color:#fff;
+    font-size: larger;
+    text-decoration: none;
+}
+.btn__main__inv:hover{
+    background-color: #fff;    
+}
+.mention__inv:hover{
+    color:#eb595b;
+}
+
+
+
 
 
 /* -------------- Footer ------------ */
@@ -305,17 +529,48 @@ footer {
     justify-content:space-between;
     background:#4d64b3;
     width:95%;
+    color:#fff;
 }
-
+.footer__top{
+    display:flex;
+    flex-direction: column;
+}
 .footer__left{
     display:flex;   
     flex-direction: column;
+    text-align: center;
+    font-size: 1.125rem;
+    font-family: "NeuePlak-Bold",sans-serif;
+    padding-bottom:32px;    
+}
+
+.footer__logo__aeag{
+    width:50%;
+    padding-bottom:16px;
+}
+
+.footer__left__slogan {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.footer__logo p{
+    margin-bottom: 2rem;
+    font-size: .75rem;
 }
 
 .footer__right{
     display:flex;   
     flex-direction: column;
 }
+
+.pied_droite_gauche .row{
+    display:flex;
+}
+
+
+
 
 
 
@@ -448,15 +703,29 @@ footer {
         width: auto;
         height: 10rem;
     }
-
+    /* --------------  Part 3 : La map*/
+    .container__map{
+        display:flex;
+        flex-direction: row;
+    }
+    .map {
+        margin:15px 15px 0 0 ;
+    }
+    .map__text{
+        margin:15px 0 0 0;
+    }
 
     /* -------------- Footer ------------ */
-    footer {
+    .footer {
         display:flex;   
-        flex-direction: row;
+        flex-direction: column;
         justify-content:space-between;
         background:#4d64b3;
         width:95%;
+    }
+    .footer__top{
+        display:flex;
+        flex-direction: row;
     }
 
     .footer__left{
@@ -466,7 +735,9 @@ footer {
 
     .footer__right{
         display:flex;   
-        flex-direction: column;
+    }
+    .pied_droite_gauche .row{
+        display:flex;
     }
 }
 
@@ -514,8 +785,12 @@ footer {
     }
 
     .acces__rapides__haut span{
-        color: black;
+        color: rgb(72, 63, 63);
     }
+    .acces__rapides__haut span:hover{
+        color: rgb(0, 0, 0);
+    }
+
     .acces__rapides__haut__list{
         display: flex;
         flex-direction: row;
@@ -635,6 +910,13 @@ footer {
     .first__level a {
         text-decoration: none;
     }
+    .first__level a span {
+        color:#4d64b3;
+    }
+    .first__level a span:active {
+        color: rgb(0, 0, 0);
+    }
+
     /* --------------- FIN menu de droite bas*/
 
 
@@ -770,14 +1052,29 @@ footer {
         height: 10rem;
     }
 
+    /* --------------  Part 3 : La map*/
+    .container__map{
+        display:flex;
+        flex-direction: row;
+    }
+    .map {
+        margin:15px 15px 0 0 ;
+    }
+    .map__text{
+        margin:15px 0 0 0;
+    }
 
     /* -------------- Footer ------------ */
-    footer {
+    .footer {
         display:flex;   
-        flex-direction: row;
+        flex-direction: column;
         justify-content:space-between;
         background:#4d64b3;
         width:95%;
+    }
+    .footer__top{
+        display:flex;
+        flex-direction: row;
     }
 
     .footer__left{
@@ -787,6 +1084,9 @@ footer {
 
     .footer__right{
         display:flex;   
-        flex-direction: column;
     }
+    .pied_droite_gauche .row{
+        display:flex;
+    }
+
 }
